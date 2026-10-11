@@ -361,7 +361,7 @@ addEventListener('resize',size);size();
 var clock=new THREE.Clock();
 function frame(){var t=clock.getElapsedTime(),H=document.documentElement.scrollHeight-innerHeight,pr=H>0?scrollY/H:0;
 vel+=(Math.abs(scrollY-last)-vel)*.1;last=scrollY;
-var tx=narrow?1.6:3.3*Math.cos(pr*Math.PI*3),sc=(narrow?.55:.9)*(1-pr*.2);
+var tx=narrow?1.6:4.2*Math.cos(pr*Math.PI*3),sc=(narrow?.55:.9)*(1-pr*.2);
 G.position.x+=(tx-G.position.x)*.06;
 G.position.y+=((narrow?.5-pr:Math.sin(t*.8)*.15)-G.position.y)*.06;
 G.scale.setScalar(sc);G.rotation.y=t*.4+pr*8;T.offset.y=-t*.1-pr*2;
