@@ -95,7 +95,7 @@ section{padding:84px 0}
 .sig{font-family:var(--serif);font-style:italic;font-size:28px;color:var(--gold2)}
 .pk{display:grid;gap:20px;perspective:1100px}
 @media(min-width:700px){.pk{grid-template-columns:1fr 1fr}}
-@media(min-width:1000px){.pk{grid-template-columns:repeat(4,1fr)}}
+.pc .pph{aspect-ratio:16/9}.pc .pph::after{display:none}
 .pc{background:linear-gradient(170deg,#1b1610,#0f0c09);border:1px solid var(--line);padding:0;overflow:hidden;display:flex;flex-direction:column}
 .pb{padding:22px 24px 26px;display:flex;flex-direction:column;flex:1}
 .pc.top{border-color:var(--gold);box-shadow:0 0 0 1px var(--gold)}
@@ -177,7 +177,7 @@ footer a{margin-right:18px}
 <canvas id="gl" aria-hidden="true"></canvas>
 <header><div class="wrap bar">
  <a class="logo" href="#top" id="home" aria-label="Legends Barbershop, înapoi sus"><img src="img/logo-icon.png" alt="" width="34" height="60"><span>LEGENDS<small>BARBER SHOP</small></span></a>
- <nav aria-label="Principal"><a href="#servicii">Servicii</a><a href="#pachete">Pachete</a><a href="#salon">Salonul</a><a href="#echipa">Echipa</a><a href="#contact">Contact</a></nav>
+ <nav aria-label="Principal"><a href="#servicii">Servicii</a><a href="#oferte">Oferte</a><a href="#salon">Salonul</a><a href="#echipa">Echipa</a><a href="#contact">Contact</a></nav>
  <a class="btn fill" href="https://mero.ro/p/legends-barber-shop" target="_blank" rel="noopener">Programează-te</a>
 </div></header>
 
@@ -192,7 +192,7 @@ footer a{margin-right:18px}
 </div></div>
 
 <div class="trust"><div class="wrap">
- <div><b>4,99 / 5</b>488 evaluări</div><div><b>13 ani</b>experiență la fondator</div><div><b>6 specialiști</b>în echipă</div><div><b>Luni–Sâmbătă</b>10:00 – 20:00</div><div style="grid-column:1/-1;border:0" class="t5"><b>Programare online</b>în câteva secunde</div>
+ <div><b>4,99 / 5</b>488 evaluări</div><div><b>Din 2011</b>în frizerie, fondatorul</div><div><b>6 specialiști</b>în echipă</div><div><b>Luni–Sâmbătă</b>10:00 – 20:00</div><div style="grid-column:1/-1;border:0" class="t5"><b>Programare online</b>în câteva secunde</div>
 </div></div>
 
 <section id="servicii" class="dim"><div class="wrap">
@@ -200,8 +200,8 @@ footer a{margin-right:18px}
  <p class="sub rv-in">Fiecare serviciu, făcut cu atenție la detalii și într-o atmosferă primitoare.</p>
  <div class="grid g3">
   <article class="sv tilt rv-in"><div class="sph"><img src="img/servicii/tuns.jpg" data-b="img/servicii/tuns" data-fb="img/salon-1.jpg" alt="Tuns și styling" loading="lazy" style="object-position:50% 40%" onerror="nx(this)"></div><div class="sb"><h3>Tuns și styling</h3><p>Fade, clasic sau personalizat, cu spălat și aranjat.</p><div class="from">de la 70 lei</div></div></article>
-  <article class="sv tilt rv-in"><div class="sph"><img src="img/servicii/barba.jpg" data-b="img/servicii/barba" data-fb="img/salon-2.jpg" alt="Barbă și hot towel" loading="lazy" style="object-position:30% 50%" onerror="nx(this)"></div><div class="sb"><h3>Barbă și hot towel</h3><p>Aranjat, contur, barbierit cu prosop cald și vopsit barbă.</p><div class="from">de la 50 lei</div></div></article>
-  <article class="sv tilt rv-in"><div class="sph"><img src="img/servicii/cosmetica.jpg" data-b="img/servicii/cosmetica" data-fb="img/salon-4.jpg" alt="Cosmetică masculină" loading="lazy" style="object-position:70% 50%" onerror="nx(this)"></div><div class="sb"><h3>Cosmetică masculină</h3><p>Tratament facial, Vapofor, black mask și pensat.</p><div class="from">de la 40 lei</div></div></article>
+  <article class="sv tilt rv-in"><div class="sph"><img src="img/servicii/barba.jpg" data-b="img/servicii/barba" data-fb="img/salon-2.jpg" alt="Barbă și hot towel" loading="lazy" style="object-position:30% 50%" onerror="nx(this)"></div><div class="sb"><h3>Barbă și hot towel</h3><p>Aranjat, contur, barbierit cu prosop cald și vopsit barbă.</p><div class="from">de la 25 lei</div></div></article>
+  <article class="sv tilt rv-in"><div class="sph"><img src="img/servicii/cosmetica.jpg" data-b="img/servicii/cosmetica" data-fb="img/salon-4.jpg" alt="Cosmetică masculină" loading="lazy" style="object-position:70% 50%" onerror="nx(this)"></div><div class="sb"><h3>Cosmetică masculină</h3><p>Tratament facial cu Vapofor și pensat.</p><div class="from">de la 50 lei</div></div></article>
   <article class="sv tilt rv-in"><div class="sph"><img src="img/servicii/manichiura.jpg" data-b="img/servicii/manichiura" data-fb="img/salon-3.jpg" alt="Manichiură și pedichiură" loading="lazy" style="object-position:50% 60%" onerror="nx(this)"></div><div class="sb"><h3>Manichiură și pedichiură</h3><p>Îngrijire completă pentru mâini și picioare.</p><div class="from">de la 60 lei</div></div></article>
   <article class="sv tilt rv-in"><div class="sph"><img src="img/servicii/codite.jpg" data-b="img/servicii/codite" data-fb="img/salon-1.jpg" alt="Codițe" loading="lazy" style="object-position:80% 40%" onerror="nx(this)"></div><div class="sb"><h3>Codițe</h3><p>Codițe pe păr natural sau cu meșă, în orice culoare.</p><div class="from">de la 200 lei</div></div></article>
   <article class="sv tilt rv-in"><div class="sph"><img src="img/servicii/epilare.jpg" data-b="img/servicii/epilare" data-fb="img/salon-2.jpg" alt="Epilare" loading="lazy" style="object-position:80% 60%" onerror="nx(this)"></div><div class="sb"><h3>Epilare</h3><p>Nas, urechi, pomeți și sprâncene, rapid și curat.</p><div class="from">de la 10 lei</div></div></article>
@@ -212,29 +212,29 @@ footer a{margin-right:18px}
  <div class="photo tilt rv-in"><img src="img/salon-3.jpg" alt="Interiorul Legends Barbershop cu scaune negre și oglinzi luminate" loading="lazy"></div>
  <div class="rv-in">
   <h2>Unde stilul se întâlnește cu măiestria</h2>
-  <p>De 7 ani, Legends este locul unde pasiunea pentru frizerie prinde viață în fiecare tunsoare. O tunsoare bună înseamnă mai mult decât aspect: înseamnă încredere, atitudine și stare de bine.</p>
+  <p>Din anul 2018, Legends este locul unde pasiunea pentru frizerie prinde viață în fiecare tunsoare. O tunsoare bună înseamnă mai mult decât aspect: înseamnă încredere, atitudine și stare de bine.</p>
   <p>La Legends nu primești doar un serviciu, ci o experiență completă, într-o atmosferă profesionistă și primitoare.</p>
   <p class="sig">Hamude, fondator</p>
   <a class="btn" href="#echipa" style="margin-top:12px">Cunoaște echipa</a>
  </div>
 </div></section>
 
-<section id="pachete" class="dim"><div class="wrap">
- <h2 class="rv-in">Pachete</h2>
- <p class="sub rv-in">Mai multe servicii într-o singură vizită, la preț redus față de prețul normal.</p>
+<section id="oferte" class="dim"><div class="wrap">
+ <h2 class="rv-in">Oferte</h2>
+ <p class="sub rv-in">Pachete și oferte speciale, cu prețurile din salon.</p>
  <div class="pk">
-  <article class="pc tilt rv-in"><div class="pph"><img src="img/pachete/silver.jpg" data-b="img/pachete/silver" data-fb="img/salon-1.jpg" alt="Pachet Silver" loading="lazy" style="object-position:40% 50%" onerror="nx(this)"></div><div class="pb"><h3>Silver</h3><div class="t">1 h</div><ul><li>Tuns</li><li>Aranjat barbă și contur</li><li>Spălat și styling</li></ul><div class="pr"><strong>120</strong><em>lei</em><s>145 lei</s></div><a class="btn" href="https://mero.ro/p/legends-barber-shop" target="_blank" rel="noopener">Programează</a></div></article>
-  <article class="pc top tilt rv-in"><div class="pph"><img src="img/pachete/golden.jpg" data-b="img/pachete/golden" data-fb="img/salon-3.jpg" alt="Pachet Golden" loading="lazy" style="object-position:50% 40%" onerror="nx(this)"></div><div class="pb"><h3>Golden</h3><div class="t">1 h 30 min</div><ul><li>Tuns, barbă și contur, styling</li><li>Vopsit barbă cu masaj capilar</li><li>Tratament facial</li><li>Epilat facial</li></ul><div class="pr"><strong>220</strong><em>lei</em><s>285 lei</s></div><a class="btn fill" href="https://mero.ro/p/legends-barber-shop" target="_blank" rel="noopener">Programează</a></div></article>
-  <article class="pc tilt rv-in"><div class="pph"><img src="img/pachete/ingrijire.jpg" data-b="img/pachete/ingrijire" data-fb="img/salon-4.jpg" alt="Pachet Îngrijire completă" loading="lazy" style="object-position:60% 50%" onerror="nx(this)"></div><div class="pb"><h3>Îngrijire completă</h3><div class="t">1 h</div><ul><li>Manichiură</li><li>Tratament facial</li><li>Pensat</li></ul><div class="pr"><strong>150</strong><em>lei</em><s>180 lei</s></div><a class="btn" href="https://mero.ro/p/legends-barber-shop" target="_blank" rel="noopener">Programează</a></div></article>
-  <article class="pc tilt rv-in"><div class="pph"><img src="img/pachete/cosmetica.jpg" data-b="img/pachete/cosmetica" data-fb="img/salon-2.jpg" alt="Pachet Cosmetică" loading="lazy" style="object-position:60% 50%" onerror="nx(this)"></div><div class="pb"><h3>Cosmetică</h3><div class="t">1 h 30 min</div><ul><li>Manichiură și pedichiură</li><li>Tratament facial</li><li>Pensat</li></ul><div class="pr"><strong>200</strong><em>lei</em><s>250 lei</s></div><a class="btn" href="https://mero.ro/p/legends-barber-shop" target="_blank" rel="noopener">Programează</a></div></article>
+  <article class="pc top tilt rv-in"><div class="pph"><img src="img/oferte/golden.jpg" alt="Oferta Golden, Legends Barbershop" loading="lazy"></div><div class="pb"><h3>Golden</h3><div class="t">1 h 30 min</div><ul><li>Tuns capilar, aranjat barbă și contur</li><li>Spălat și styling, vopsit barbă</li><li>Masaj capilar și tratament facial</li><li>Epilat facial (urechi, nas, pomeți)</li></ul><div class="pr"><strong>220</strong><em>lei</em><s>260 lei</s></div><a class="btn fill" href="https://mero.ro/p/legends-barber-shop" target="_blank" rel="noopener">Programează</a></div></article>
+  <article class="pc tilt rv-in"><div class="pph"><img src="img/oferte/silver.jpg" alt="Oferta Silver, Legends Barbershop" loading="lazy"></div><div class="pb"><h3>Silver</h3><div class="t">1 h</div><ul><li>Tuns capilar</li><li>Aranjat barbă și contur</li><li>Spălat și styling</li></ul><div class="pr"><strong>120</strong><em>lei</em><s>130 lei</s></div><a class="btn" href="https://mero.ro/p/legends-barber-shop" target="_blank" rel="noopener">Programează</a></div></article>
+  <article class="pc tilt rv-in"><div class="pph"><img src="img/oferte/ingrijire.jpg" alt="Oferta Îngrijire completă, Legends Barbershop" loading="lazy"></div><div class="pb"><h3>Îngrijire completă</h3><div class="t">1 h</div><ul><li>Manichiură</li><li>Tratament facial</li><li>Pensat</li></ul><div class="pr"><strong>150</strong><em>lei</em><s>180 lei</s></div><a class="btn" href="https://mero.ro/p/legends-barber-shop" target="_blank" rel="noopener">Programează</a></div></article>
+  <article class="pc tilt rv-in"><div class="pph"><img src="img/oferte/cosmetica.jpg" alt="Oferta Cosmetică, Legends Barbershop" loading="lazy"></div><div class="pb"><h3>Cosmetică</h3><div class="t">1 h 30 min</div><ul><li>Manichiură și pedichiură</li><li>Tratament facial</li><li>Pensat</li></ul><div class="pr"><strong>200</strong><em>lei</em><s>250 lei</s></div><a class="btn" href="https://mero.ro/p/legends-barber-shop" target="_blank" rel="noopener">Programează</a></div></article>
+  <article class="pc tilt rv-in"><div class="pph"><img src="img/oferte/tuns-spalat-styling.jpg" alt="Oferta Tuns + spălat și styling, Legends Barbershop" loading="lazy"></div><div class="pb"><h3>Tuns + spălat și styling</h3><ul><li>Tuns capilar</li><li>Spălat și styling</li></ul><div class="pr"><strong>80</strong><em>lei</em></div><a class="btn" href="https://mero.ro/p/legends-barber-shop" target="_blank" rel="noopener">Programează</a></div></article>
+  <article class="pc tilt rv-in"><div class="pph"><img src="img/oferte/tuns.jpg" alt="Oferta Tuns capilar fără spălat, Legends Barbershop" loading="lazy"></div><div class="pb"><h3>Tuns capilar fără spălat</h3><ul><li>Tuns precis</li><li>Stil personalizat</li><li>Look impecabil</li></ul><div class="pr"><strong>70</strong><em>lei</em></div><a class="btn" href="https://mero.ro/p/legends-barber-shop" target="_blank" rel="noopener">Programează</a></div></article>
+  <article class="pc tilt rv-in"><div class="pph"><img src="img/oferte/barba.jpg" alt="Oferta Aranjat barbă și contur, Legends Barbershop" loading="lazy"></div><div class="pb"><h3>Aranjat barbă și contur</h3><ul><li>Aranjat barbă profesional</li><li>Contur precis</li><li>Prosop cald inclus</li></ul><div class="pr"><strong>50</strong><em>lei</em></div><a class="btn" href="https://mero.ro/p/legends-barber-shop" target="_blank" rel="noopener">Programează</a></div></article>
+  <article class="pc tilt rv-in"><div class="pph"><img src="img/oferte/codite-femei.jpg" alt="Oferta Codițe din păr natural pentru femei, Legends Barbershop" loading="lazy"></div><div class="pb"><h3>Codițe din păr natural pentru femei</h3><ul><li>Păr 100% natural</li><li>Lucrare profesională</li><li>Rezistență îndelungată</li></ul><div class="pr"><strong>200</strong><em>lei</em></div><a class="btn" href="https://mero.ro/p/legends-barber-shop" target="_blank" rel="noopener">Programează</a></div></article>
+  <article class="pc tilt rv-in"><div class="pph"><img src="img/oferte/codite-natural.jpg" alt="Oferta Codițe din păr natural, Legends Barbershop" loading="lazy"></div><div class="pb"><h3>Codițe din păr natural</h3><ul><li>Păr natural</li><li>Lucrare profesională</li><li>Rezistență îndelungată</li></ul><div class="pr"><strong>200</strong><em>lei</em></div><a class="btn" href="https://mero.ro/p/legends-barber-shop" target="_blank" rel="noopener">Programează</a></div></article>
+  <article class="pc tilt rv-in"><div class="pph"><img src="img/oferte/codite-mesa.jpg" alt="Oferta Codițe cu meșă, Legends Barbershop" loading="lazy"></div><div class="pb"><h3>Codițe cu meșă</h3><ul><li>În orice culoare</li><li>Lucrare profesională</li><li>Rezistență îndelungată</li></ul><div class="pr"><strong style="font-size:44px">250–450</strong><em>lei</em></div><a class="btn" href="https://mero.ro/p/legends-barber-shop" target="_blank" rel="noopener">Programează</a></div></article>
  </div>
- <details class="rv-in"><summary>Lista completă de prețuri</summary><div class="pl">
-  <div><h4>Frizerie</h4><p><span>Tuns fără spălat</span><b>70–80</b></p><p><span>Tuns și spălat</span><b>80–90</b></p><p><span>Aranjat barbă și contur</span><b>50</b></p><p><span>Barbierit hot towel</span><b>50–60</b></p><p><span>Vopsit barbă</span><b>20–35</b></p><p><span>Spălat și aranjat</span><b>25</b></p><p><span>Masaj cervical</span><b>20</b></p>
-  <h4>Codițe</h4><p><span>Pe păr natural</span><b>200</b></p><p><span>Cu meșă</span><b>250–450</b></p></div>
-  <div><h4>Cosmetică masculină</h4><p><span>Tratament Vapofor</span><b>50–100</b></p><p><span>Black mask</span><b>40</b></p><p><span>Pensat</span><b>50</b></p><p><span>Pensat cu ață</span><b>40</b></p><p><span>Pensat cu brici</span><b>20</b></p>
-  <h4>Epilare</h4><p><span>Pomeți, nas, ureche, sprâncene</span><b>10</b></p><p><span>Pachet epilat complet</span><b>30</b></p>
-  <h4>Manichiură și pedichiură</h4><p><span>Manichiură</span><b>60</b></p><p><span>Pedichiură</span><b>70–90</b></p><p><span>Pachet mani + pedi</span><b>130–150</b></p></div>
- </div></details>
+ <details class="rv-in" open><summary>Lista de prețuri</summary><div class="pl"><div><p><span>Tuns</span><b>70 lei</b></p><p><span>Tuns + spălat + styling</span><b>80 lei</b></p><p><span>Tuns pensionari</span><b>40 lei</b></p><p><span>Aranjat barbă + contur</span><b>50 lei</b></p><p><span>Tuns barbă</span><b>25 lei</b></p><p><span>Contur barbă</span><b>25 lei</b></p><p><span>Spălat</span><b>10 lei</b></p><p><span>Spălat + styling</span><b>20 lei</b></p><p><span>Bărbierit cu prosop cald</span><b>60 lei</b></p><p><span>Vopsit păr capilar</span><b>50 lei</b></p><p><span>Vopsit barbă scurtă</span><b>20 lei</b></p><p><span>Vopsit barbă lungă</span><b>30 lei</b></p></div><div><p><span>Epilat nazal</span><b>10 lei</b></p><p><span>Epilat pomeți</span><b>10 lei</b></p><p><span>Epilat urechi</span><b>10 lei</b></p><p><span>Epilat sprâncene</span><b>10 lei</b></p><p><span>Pensat (clasic sau ață)</span><b>50 lei</b></p><p><span>Manichiură cu masaj</span><b>70 lei</b></p><p><span>Pedichiură cu masaj</span><b>100 lei</b></p><p><span>Manichiură</span><b>60 lei</b></p><p><span>Pedichiură</span><b>70 lei</b></p><p><span>Ras capilar (spălat gratuit)</span><b>50 lei</b></p><p><span>Masaj cervical</span><b>20 lei</b></p><p><span>Tratament facial cu Vapofor</span><b>70 lei</b></p></div></div></details>
 </div></section>
 
 <section id="salon"><div class="wrap">
@@ -252,12 +252,12 @@ footer a{margin-right:18px}
  <h2 class="rv-in">Echipa Legends</h2>
  <p class="sub rv-in">Alege specialistul la care vrei să te programezi direct din calendar.</p>
  <div class="team">
-  <article class="pe tilt rv-in"><div class="ph">H<img src="img/hamude.jpg" data-b="img/hamude" alt="Hamude, fondator" loading="lazy" onerror="nx(this)"></div><div class="t"><h3>Hamude</h3><p class="role">BARBER ȘI FONDATOR</p><p>13 ani de experiență. Detalii, stil personalizat și respect pentru fiecare client.</p></div></article>
-  <article class="pe tilt rv-in"><div class="ph">G<img src="img/giovani.jpg" data-b="img/giovani" alt="Giovani, barber" loading="lazy" onerror="nx(this)"></div><div class="t"><h3>Giovani</h3><p class="role">BARBER</p><p>Peste 11 ani de experiență, 7 în echipă. Precizie și atenție la detalii.</p></div></article>
-  <article class="pe tilt rv-in"><div class="ph">O<img src="img/omar.jpg" data-b="img/omar" alt="Omar, barber" loading="lazy" onerror="nx(this)"></div><div class="t"><h3>Omar</h3><p class="role">BARBER</p><p>5 ani la Legends. O tunsoare care îți reflectă personalitatea.</p></div></article>
-  <article class="pe tilt rv-in"><div class="ph">A<img src="img/antonio.jpg" data-b="img/antonio" alt="Antonio, barber" loading="lazy" onerror="nx(this)"></div><div class="t"><h3>Antonio</h3><p class="role">BARBER</p><p>6 ani de experiență. Fade impecabil, look clasic sau barbă pusă la punct.</p></div></article>
-  <article class="pe tilt rv-in"><div class="ph">R<img src="img/robert.jpg" data-b="img/robert" alt="Robert, barber" loading="lazy" onerror="nx(this)"></div><div class="t"><h3>Robert</h3><p class="role">BARBER</p><p>6 ani în barbering, 3 în echipă. Un look personalizat la fiecare vizită.</p></div></article>
-  <article class="pe tilt rv-in"><div class="ph">E<img src="img/elena.jpg" data-b="img/elena" alt="Elena, manichiură și codițe" loading="lazy" onerror="nx(this)"></div><div class="t"><h3>Elena</h3><p class="role">MANICHIURĂ · PEDICHIURĂ · CODIȚE</p><p>De 4 ani și jumătate la Legends. Muncă făcută cu grijă, ca să revii cu drag.</p></div></article>
+  <article class="pe tilt rv-in"><div class="ph">H<img src="img/hamude.jpg" data-b="img/hamude" alt="Hamude, fondator" loading="lazy" onerror="nx(this)"></div><div class="t"><h3>Hamude</h3><p class="role">BARBER ȘI FONDATOR</p><p>Experiență din 2011. Pune accent pe detalii, stil personalizat și respect pentru fiecare client.</p></div></article>
+  <article class="pe tilt rv-in"><div class="ph">G<img src="img/giovani.jpg" data-b="img/giovani" alt="Giovani, barber" loading="lazy" onerror="nx(this)"></div><div class="t"><h3>Giovani</h3><p class="role">BARBER</p><p>Experiență din 2013. Precizie și atenție la detalii în fiecare lucrare.</p></div></article>
+  <article class="pe tilt rv-in"><div class="ph">O<img src="img/omar.jpg" data-b="img/omar" alt="Omar, barber" loading="lazy" onerror="nx(this)"></div><div class="t"><h3>Omar</h3><p class="role">BARBER</p><p>Experiență din 2018. O tunsoare care îți reflectă personalitatea.</p></div></article>
+  <article class="pe tilt rv-in"><div class="ph">A<img src="img/antonio.jpg" data-b="img/antonio" alt="Antonio, barber" loading="lazy" onerror="nx(this)"></div><div class="t"><h3>Antonio</h3><p class="role">BARBER</p><p>Experiență din 2018. Fade impecabil, look clasic sau barbă pusă la punct.</p></div></article>
+  <article class="pe tilt rv-in"><div class="ph">R<img src="img/robert.jpg" data-b="img/robert" alt="Robert, barber" loading="lazy" onerror="nx(this)"></div><div class="t"><h3>Robert</h3><p class="role">BARBER</p><p>Experiență din 2018. Un look personalizat la fiecare vizită.</p></div></article>
+  <article class="pe tilt rv-in"><div class="ph">E<img src="img/elena.jpg" data-b="img/elena" alt="Elena, manichiură și codițe" loading="lazy" onerror="nx(this)"></div><div class="t"><h3>Elena</h3><p class="role">MANICHIURĂ · PEDICHIURĂ · CODIȚE</p><p>Experiență din 2018. Muncă făcută cu grijă, ca să revii cu drag.</p></div></article>
  </div>
 </div></section>
 
@@ -265,7 +265,7 @@ footer a{margin-right:18px}
  <div class="stats">
   <div class="rv-in"><strong class="gold" data-n="4.99" data-d="2">4,99</strong><span>rating pe Mero</span></div>
   <div class="rv-in"><strong class="gold" data-n="488">488</strong><span>evaluări</span></div>
-  <div class="rv-in"><strong class="gold" data-n="13">13</strong><span>ani experiență la fondator</span></div>
+  <div class="rv-in"><strong class="gold">2011</strong><span>anul de început al fondatorului în frizerie</span></div>
   <div class="rv-in"><strong class="gold" data-n="6">6</strong><span>specialiști</span></div>
  </div>
 </div></section>
