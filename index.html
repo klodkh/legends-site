@@ -3,6 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; frame-src https://www.google.com https://maps.google.com; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'; upgrade-insecure-requests">
+<meta name="referrer" content="strict-origin-when-cross-origin">
 <title>Legends Barbershop București | Frizerie premium, Str. Teiul Doamnei 1</title>
 <meta name="description" content="Legends Barbershop, frizerie premium în București, Sector 2. Tuns, barbă cu hot towel, tratamente faciale, manichiură și codițe. Programează-te online.">
 <link rel="canonical" href="https://legendsbarbershop.ro/">
@@ -10,11 +12,18 @@
 <meta property="og:description" content="Mai mult decât un tuns. O experiență de legendă. Str. Teiul Doamnei 1, București.">
 <meta property="og:image" content="https://legendsbarbershop.ro/img/salon-1.jpg">
 <meta property="og:type" content="website">
+<meta property="og:url" content="https://legendsbarbershop.ro/">
+<meta property="og:site_name" content="Legends Barbershop">
+<meta property="og:locale" content="ro_RO">
+<meta property="og:image:alt" content="Interiorul salonului Legends Barbershop din București">
+<meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#0b0a08">
 <link rel="icon" type="image/png" href="img/logo-icon.png">
+<link rel="apple-touch-icon" href="img/logo-icon.png">
+<link rel="preload" as="image" href="img/salon-1.jpg" fetchpriority="high">
 <link rel="stylesheet" href="fonts/fonts.css">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"HairSalon","name":"Legends Barbershop","url":"https://legendsbarbershop.ro/","image":"https://legendsbarbershop.ro/img/salon-1.jpg","telephone":"+40766655999","email":"Barbershoplegends1@gmail.com","address":{"@type":"PostalAddress","streetAddress":"Str. Teiul Doamnei nr. 1","addressLocality":"București","postalCode":"023571","addressCountry":"RO"},"geo":{"@type":"GeoCoordinates","latitude":44.4570575,"longitude":26.1290844},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"opens":"10:00","closes":"20:00"}],"sameAs":["https://www.instagram.com/legendsbucuresti/","https://www.facebook.com/LEGENDSBUCURESTI/","https://www.tiktok.com/@legendsbucuresti"]}
+{"@context":"https://schema.org","@type":"HairSalon","@id":"https://legendsbarbershop.ro/#salon","name":"Legends Barbershop","alternateName":"Legends Barbershop București","description":"Frizerie premium în București, Sector 2: tuns, barbă cu prosop cald, tratamente faciale, manichiură, pedichiură, codițe și epilare.","url":"https://legendsbarbershop.ro/","logo":"https://legendsbarbershop.ro/img/logo-full.png","image":["https://legendsbarbershop.ro/img/salon-1.jpg","https://legendsbarbershop.ro/img/salon-2.jpg","https://legendsbarbershop.ro/img/salon-3.jpg"],"telephone":"+40766655999","email":"Barbershoplegends1@gmail.com","priceRange":"10–450 lei","currenciesAccepted":"RON","foundingDate":"2018","address":{"@type":"PostalAddress","streetAddress":"Str. Teiul Doamnei nr. 1","addressLocality":"București","addressRegion":"Sector 2","postalCode":"023571","addressCountry":"RO"},"areaServed":{"@type":"City","name":"București"},"hasMap":"https://www.google.com/maps/search/?api=1&query=44.4570575,26.1290844","contactPoint":[{"@type":"ContactPoint","telephone":"+40766655999","contactType":"reservations","availableLanguage":"ro"},{"@type":"ContactPoint","telephone":"+40768914444","contactType":"customer service","availableLanguage":"ro"}],"potentialAction":{"@type":"ReserveAction","target":"https://mero.ro/p/legends-barber-shop"},"makesOffer":[{"@type":"Offer","name":"Tuns","price":"70","priceCurrency":"RON"},{"@type":"Offer","name":"Tuns + spălat + styling","price":"80","priceCurrency":"RON"},{"@type":"Offer","name":"Aranjat barbă + contur","price":"50","priceCurrency":"RON"},{"@type":"Offer","name":"Pachet Silver","price":"120","priceCurrency":"RON"},{"@type":"Offer","name":"Pachet Îngrijire completă","price":"150","priceCurrency":"RON"},{"@type":"Offer","name":"Codițe din păr natural","price":"200","priceCurrency":"RON"}],"geo":{"@type":"GeoCoordinates","latitude":44.4570575,"longitude":26.1290844},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"opens":"10:00","closes":"20:00"}],"sameAs":["https://www.instagram.com/legendsbucuresti/","https://www.facebook.com/LEGENDSBUCURESTI/","https://www.tiktok.com/@legendsbucuresti"]}
 </script>
 <style>
 :root{--bg:#0b0a08;--card:#14110d;--line:rgba(200,161,90,.28);--gold:#c8a15a;--gold2:#ecd29a;--gold3:#8d6a2f;--bone:#f2ead9;--muted:#b3a98f;
@@ -199,8 +208,8 @@ footer a{margin-right:18px}
  <h2 class="rv-in">Servicii premium</h2>
  <p class="sub rv-in">Fiecare serviciu, făcut cu atenție la detalii și într-o atmosferă primitoare.</p>
  <div class="grid g3">
-  <article class="sv tilt rv-in"><div class="sph"><img src="img/servicii/tuns.jpg" data-b="img/servicii/tuns" data-fb="img/salon-1.jpg" alt="Tuns și styling" loading="lazy" style="object-position:50% 40%" onerror="nx(this)"></div><div class="sb"><h3>Tuns și styling</h3><p>Fade, clasic sau personalizat, cu spălat și aranjat.</p><div class="from">de la 70 lei</div></div></article>
-  <article class="sv tilt rv-in"><div class="sph"><img src="img/servicii/barba.jpg" data-b="img/servicii/barba" data-fb="img/salon-2.jpg" alt="Barbă și hot towel" loading="lazy" style="object-position:30% 50%" onerror="nx(this)"></div><div class="sb"><h3>Barbă și hot towel</h3><p>Aranjat, contur, barbierit cu prosop cald și vopsit barbă.</p><div class="from">de la 25 lei</div></div></article>
+  <article class="sv tilt rv-in"><div class="sph"><img src="img/servicii/tuns.jpeg" data-b="img/servicii/tuns" data-fb="img/salon-1.jpg" alt="Tuns și styling" loading="lazy" style="object-position:50% 40%" onerror="nx(this)"></div><div class="sb"><h3>Tuns și styling</h3><p>Fade, clasic sau personalizat, cu spălat și aranjat.</p><div class="from">de la 70 lei</div></div></article>
+  <article class="sv tilt rv-in"><div class="sph"><img src="img/servicii/barba.jpeg" data-b="img/servicii/barba" data-fb="img/salon-2.jpg" alt="Barbă și hot towel" loading="lazy" style="object-position:30% 50%" onerror="nx(this)"></div><div class="sb"><h3>Barbă și hot towel</h3><p>Aranjat, contur, barbierit cu prosop cald și vopsit barbă.</p><div class="from">de la 25 lei</div></div></article>
   <article class="sv tilt rv-in"><div class="sph"><img src="img/servicii/cosmetica.jpg" data-b="img/servicii/cosmetica" data-fb="img/salon-4.jpg" alt="Cosmetică masculină" loading="lazy" style="object-position:70% 50%" onerror="nx(this)"></div><div class="sb"><h3>Cosmetică masculină</h3><p>Tratament facial cu Vapofor și pensat.</p><div class="from">de la 50 lei</div></div></article>
   <article class="sv tilt rv-in"><div class="sph"><img src="img/servicii/manichiura.jpg" data-b="img/servicii/manichiura" data-fb="img/salon-3.jpg" alt="Manichiură și pedichiură" loading="lazy" style="object-position:50% 60%" onerror="nx(this)"></div><div class="sb"><h3>Manichiură și pedichiură</h3><p>Îngrijire completă pentru mâini și picioare.</p><div class="from">de la 60 lei</div></div></article>
   <article class="sv tilt rv-in"><div class="sph"><img src="img/servicii/codite.jpg" data-b="img/servicii/codite" data-fb="img/salon-1.jpg" alt="Codițe" loading="lazy" style="object-position:80% 40%" onerror="nx(this)"></div><div class="sb"><h3>Codițe</h3><p>Codițe pe păr natural sau cu meșă, în orice culoare.</p><div class="from">de la 200 lei</div></div></article>
